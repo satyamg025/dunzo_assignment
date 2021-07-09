@@ -1,0 +1,24 @@
+Functional Test Cases
+============================
+
+1. Check the behavior when a particular Ingredient required to prepare the drink is not available in the coffee machine
+
+2. Check the behavior when a particular Ingredient does not sufficient quantity to prepare the drink in the coffee machine
+
+3. Refill the ingredient of coffee machine
+
+4. Check the indicator when ingredient is low on quantity
+
+5. Check the indicator when ingredient running low on quantity is refilled, that ingredient should be removed from the indicator
+
+6. Say coffee machine has ingredient hot_water with quantity 100 ml, Process Drink1 which requires 60 ml of hot_water, it will be processed successfully. Take Drink2 which requires 50 ml of hot_water, it should not be processed. Now process Drink3 which needs 30 ml of hot_water, it should get processed and hot_water now should have its low indicator turned on.
+Refill the hot_water to 100 ml, low indicator should be turned off. Again process Drink2, this time it should get processed.
+
+7. Say DrinkX requires green_leaves ingredient which is not available in the coffee machine, so it should not be processed.
+Add green_leaves ingredient and again process it. This time it should get processed.
+
+8. Check by removing the ingredient from coffee machine and try to process the ingredient which requires the removed ingredient
+
+9. Check the low indicator turned on when some ingredient starts with 0 ml while installing coffee machine.
+
+10. Check when all the outlets are getting used simultaneously
